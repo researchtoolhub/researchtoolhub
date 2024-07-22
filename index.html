@@ -367,14 +367,14 @@
             <div class="col-md-6 col-lg-5">
               <h5 class="text-primary font-sans-serif fw-bold">Subscrible now</h5>
               <h1 class="mb-5">Get every single<br />update you will get</h1>
-              <form class="row g-0 align-items-center">
+              <form class="row g-0 align-items-center" id="leadForm">
                 <div class="col">
                   <div class="input-group-icon">
-                    <input class="form-control form-little-squirrel-control" type="email" placeholder="Enter email " aria-label="email" /><i class="fas fa-envelope input-box-icon"></i>
+                    <input class="form-control form-little-squirrel-control" type="email" placeholder="Enter email " aria-label="email" id="email" name="email"/><i class="fas fa-envelope input-box-icon"></i>
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button class="btn btn-primary rounded-0" type="submit">Subscribe now</button>
+                  <button class="btn btn-primary rounded-0" type="button" onclick="submitLead()">Subscribe now</button>
                 </div>
               </form>
             </div>
@@ -492,6 +492,9 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="vendors/fontawesome/all.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="assets/js/communication.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&amp;family=Rubik:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
   </body>
