@@ -85,7 +85,8 @@
               </ul>
             </div>
             <div class="col-auto">
-              <p class="my-2 fs--1"><i class="fas fa-envelope me-3"></i><a class="text-900" href="mailto:researchtoolhub@gmail.com">researchtoolhub@gmail.com</a></p>
+              <!-- <p class="my-2 fs--1"><i class="fas fa-envelope me-3"></i><a class="text-900" href="mailto:researchtoolhub@gmail.com">researchtoolhub@gmail.com</a></p> -->
+              <p class="my-2 fs--1"><i class="fas fa-envelope me-3"></i><a class="text-900" href="#" onclick="mailMe()">researchtoolhub@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -264,14 +265,14 @@
             <div class="col-md-6 col-lg-5">
               <h5 class="text-primary font-sans-serif fw-bold">Subscrible now</h5>
               <h1 class="mb-5">Get every single<br />update you will get</h1>
-              <form class="row g-0 align-items-center">
+              <form class="row g-0 align-items-center" id="leadForm">
                 <div class="col">
                   <div class="input-group-icon">
-                    <input class="form-control form-little-squirrel-control" type="email" placeholder="Enter email " aria-label="email" /><i class="fas fa-envelope input-box-icon"></i>
+                    <input class="form-control form-little-squirrel-control" type="email" placeholder="Enter email " aria-label="email" id="email" name="email"/><i class="fas fa-envelope input-box-icon"></i>
                   </div>
                 </div>
                 <div class="col-auto">
-                  <button class="btn btn-primary rounded-0" type="submit">Subscribe now</button>
+                  <button class="btn btn-primary rounded-0" type="button" onclick="submitLead()">Subscribe now</button>
                 </div>
               </form>
             </div>
@@ -305,9 +306,9 @@
                   San Francisco, CA <br> New Delhi, India <br> Bramton, Canada
                 </div>
               </div>
-              <!-- <p class="text-light my-4"> <i class="fas fa-map-marker-alt me-3"></i><span class="text-light">1500 Treat Ave, Suite 200  &nbsp;</span><a class="text-light" href="tel:+604-680-9785">+604-680-9785</a><br />San Francisco, CA 94110</p> -->
-              <p class="text-light my-4"> <i class="fas fa-envelope me-3"> </i><a class="text-light" href="mailto:researchtoolhub@gmail.com">researchtoolhub@gmail.com</a></p>
-              <!-- <p class="text-light"> <i class="fas fa-phone-alt me-3"></i><a class="text-light" href="tel:1-800-800-2299">1-800-800-2299 (Support)</a></p> -->
+                            <!-- <p class="text-light my-4"> <i class="fas fa-envelope me-3"> </i><a class="text-light" href="mailto:researchtoolhub@gmail.com">researchtoolhub@gmail.com</a></p> -->
+                            <p class="text-light my-4"> <i class="fas fa-envelope me-3"> </i><a class="text-light" href="#" onclick="mailMe()">researchtoolhub@gmail.com</a></p>
+                            <!-- <p class="text-light"> <i class="fas fa-phone-alt me-3"></i><a class="text-light" href="tel:1-800-800-2299">1-800-800-2299 (Support)</a></p> -->
             </div>
             <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
               <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">Community </h5>

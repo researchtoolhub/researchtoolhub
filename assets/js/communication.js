@@ -55,3 +55,8 @@ function submitLead() {
     })
     .catch((error) => console.error(error));
 };
+
+function mailMe() {
+    let url = "https://mail.google.com/mail/?view=cm&fs=1&to=researchtoolhub@gmail.com&su=Research%Tools&body=Hello%2C%0ANeed%20Reserch%20Tools."
+    window.open(url, "_blank", "width=600,height=400");
+}
